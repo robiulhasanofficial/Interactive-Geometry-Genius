@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+      <!-- fanish -->
+       <!-- con fige .js -->
+        <script src="tailwind.config.js"></script>
+        <!-- fanish -->
+    <title class="">Document</title>
+   
+</head>
+<body class="m-8">
+  <header>
+
+  </header>
+  <main class="">
+    <div class="flex flex-col lg:flex-row">
+      <!-- card continar -->
+      <div class="flex-1 grid grid-cols-1  lg:grid-cols-3"> 
+        <!-- Triangle -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/triangle.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-center">Triangle</h2>
+            <p class="text-center" >Area (A) =0.5 x b x n</p>
+           <div class="flex">
+            <input id="trangalinput"  class=" w-24 text-2px p-2  rounded-sm" type="text " name=""  placeholder="b">
+            <span class="mr-4 ml-2">cm</span>
+            <input id="trangalinputh" class=" w-24 text-2px p-2  rounded-sm" type="text" name=""  placeholder="h">
+            <span class="mr-4 ml-2">cm</span>
+           </div>
+           <div class="flex ">
+            <p class="text-3xl">area:</p><span class="text-3xl" id="tarea"></span><span class="text-3xl">cm<sup>2</sup></span>
+           </div>
+            <div class="card-actions">
+              <button onclick=" trangalAraea()" class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- fanish card -->
+         <!-- Rectangle-->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="./images/rectangle.png"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rectangle</h2>
+            <p class="text-center">Area (A) = w x I</p>
+            <div class="flex">
+            <input id="RectangleuinpuB"  class=" w-24 text-2px p-2  rounded-sm" type="text " name=""  placeholder="W">
+            <span class="mr-4 ml-2">cm</span>
+            <input id="RectangleuinputhL" class=" w-24 text-2px p-2  rounded-sm" type="text" name=""  placeholder="I">
+            <span class="mr-4 ml-2">cm</span>
+           </div>
+           <div class="flex ">
+            <p class="text-3xl">area:</p><span class="text-3xl" id="Rarea"></span><span class="text-3xl">cm<sup>2</sup></span>
+           </div>
+            <div class="card-actions">
+              <button onclick="Rectangleu()" class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- fanish card -->
+         <!-- Parallelogram -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- fanish card -->
+         <!-- Rhombus -->
+        <div class="card bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- fanish card -->
+         
+         
+        
+
+      </div>
+      <!-- calcolet continar -->
+      <div class="w-96 border-2 border-gray-700 rounded-md">
+        <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+
+      </div>
+    </div>
+
+  </main>
+  <script src="./js/Area Calculation.js"></script>
+    
+</body>
+</html>
