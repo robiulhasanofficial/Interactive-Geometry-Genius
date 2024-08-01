@@ -18,11 +18,11 @@
 
   </header>
   <main class="">
-    <div class="flex flex-col lg:flex-row">
+    <div class="">
       <!-- card continar -->
-      <div class="flex-1 grid grid-cols-1  lg:grid-cols-3"> 
+      <div class="grid grid-cols-1 lg:grid-cols-3"> 
         <!-- Triangle -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl  hover:bg-[#a5f3fc] p-5">
           <figure>
             <img
               src="./images/triangle.png"
@@ -38,7 +38,7 @@
             <span class="mr-4 ml-2">cm</span>
            </div>
            <div class="flex ">
-            <p class="text-3xl">area:</p><span class="text-3xl" id="tarea"></span><span class="text-3xl">cm<sup>2</sup></span>
+            <p class="text-3xl">area:</p><span class="text-3xl" id="tarea">00</span><span class="text-3xl">cm<sup>2</sup></span>
            </div>
             <div class="card-actions">
               <button onclick=" trangalAraea()" class="btn btn-primary w-full">Calculate</button>
@@ -47,7 +47,7 @@
         </div>
         <!-- fanish card -->
          <!-- Rectangle-->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl hover:bg-[#fde047] p-5">
           <figure>
             <img
               src="./images/rectangle.png"
@@ -63,7 +63,7 @@
             <span class="mr-4 ml-2">cm</span>
            </div>
            <div class="flex ">
-            <p class="text-3xl">area:</p><span class="text-3xl" id="Rarea"></span><span class="text-3xl">cm<sup>2</sup></span>
+            <p class="text-3xl">area:</p><span class="text-3xl" id="Rarea">00</span><span class="text-3xl">cm<sup>2</sup></span>
            </div>
             <div class="card-actions">
               <button onclick="Rectangleu()" class="btn btn-primary w-full">Calculate</button>
@@ -72,46 +72,37 @@
         </div>
         <!-- fanish card -->
          <!-- Parallelogram -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card bg-base-100 w-96 shadow-xl hover:bg-[#f87171] p-5">
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              src="./images/parallelogram.png"
               alt="Shoes" />
           </figure>
           <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+            <h2 class="card-title">Parallelogram </h2>
+            <p>Area (A) = b x h</p>
+            <div class="flex">
+              <input id="Parallelograminput"  class=" w-24 text-2px p-2  rounded-sm" type="text " name=""  placeholder="b">
+              <span class="mr-4 ml-2">cm</span>
+              <input id="Parallelograminputh" class=" w-24 text-2px p-2  rounded-sm" type="text" name=""  placeholder="h">
+              <span class="mr-4 ml-2">cm</span>
+             </div>
+             <div class="flex ">
+              <p class="text-3xl">area:</p><span class="text-3xl" id="parea">00</span><span class="text-3xl">cm<sup>2</sup></span>
+             </div>
+              <div class="card-actions">
+                <button onclick="Parallelogram()" class="btn btn-primary w-full">Calculate</button>
+              </div>
             </div>
           </div>
-        </div>
         <!-- fanish card -->
-         <!-- Rhombus -->
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
-          </div>
-        </div>
-        <!-- fanish card -->
+         
          
          
         
 
       </div>
-      <!-- calcolet continar -->
-      <div class="w-96 border-2 border-gray-700 rounded-md">
-        <h3 class="text-3xl text-center p-4">Area Calculation</h3>
-
+      
       </div>
     </div>
 

@@ -25,4 +25,23 @@ const areao=Wight*long
 const regalt=document.getElementById('Rarea')
 regalt.innerText=areao
 
+
+}
+function Parallelogram(){
+    const  Parallelogramp=ParallelogramId('Parallelograminput')
+    const  Parallelogramh=ParallelogramId('Parallelograminputh')
+    const area= Parallelogramp*Parallelogramh
+    Parallelogramreglt('parea',area)
+
+
+}
+function ParallelogramId(params) {
+    const Parallelogramtext=document.getElementById(params)
+    const ParallelogramValu=Parallelogramtext.value;
+    const pravalu=parseFloat(ParallelogramValu)
+    return pravalu; 
+}
+function Parallelogramreglt(pagram,area){
+    const Parallelogramreg=document.getElementById(pagram)
+    Parallelogramreg.innerText=area;
 }
